@@ -25,7 +25,7 @@ SECRET_KEY = 'bm8q6*ma)d4as-g@ss2pxr2r*4$-m2$)6^evamd_4gv=2omc_#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['18.216.50.137','ec2-18-216-50-137.us-east-2.compute.amazonaws.com']
+ALLOWED_HOSTS = ['18.216.50.137','ec2-18-216-50-137.us-east-2.compute.amazonaws.com','.withinlimit.com']
 
 
 # Application definition
@@ -77,6 +77,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+	'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '',
     }
 }
 
