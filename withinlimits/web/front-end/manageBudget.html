@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Budget</title>
+    <link rel="stylesheet" type="text/css" href="Global.css"/>
+    <style type="text/css">
+       p {
+            font-family: arial;
+            font-size: 1em;
+       }
+        
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="title">
+            <h1>Within Limit</h1>
+        </div>
+        <div id="header">
+            
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="manageBudget.html">Manage Budget</a></li>
+                <li></li>
+                <li></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+        
+        <div id="adjust">
+            <h2>Daily Budget</h2>
+            <form action='#' method="post">
+            <div id="slidecontainer">
+                <input type="range" min="0" max = "80" value="10" class="slider" id="budget">
+                <p>Budget: $<span id="cash"></span></p>
+            </div>
+            <script>
+                var slider = document.getElementById("budget");
+                var output = document.getElementById("cash");
+                output.innerHTML = slider.value; 
+
+                slider.oninput = function() {
+                    output.innerHTML = this.value;
+                }
+            </script>
+            Distance from Current Location: <input type="number" min="0" max="20" step="0.01" />  km</br>
+            <input type="submit" value="Search for food near you" name="submit" id="submit"/>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

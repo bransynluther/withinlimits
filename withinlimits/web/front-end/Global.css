@@ -1,0 +1,86 @@
+        #container
+            {
+                width: 1200px;
+                margin: 0 auto;
+                padding-top: 10px;
+                font-family: Arial;
+            }
+        
+        #title
+            {
+                
+                
+            }
+        
+        #header
+            {
+                background-color: #00007d;
+            }
+        ul
+            {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+            }
+        li a:link, li a:visited
+            {
+                text-decoration: none;
+                color: #ffffff;
+                font-family: arial;
+                font-size: 1.1em;
+                
+            }
+        li
+            {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                width: 160px;
+                height: 30px;
+                padding-left: 10px;
+                padding-right: 10px; 
+                padding-top: 10px;
+                padding-bottom:10px;
+                margin: -2px;
+            }
+        li a:hover
+            {
+                color: grey;
+            }
+            
+        #slidecontainer {
+            width: 100%;
+        }
+        
+        .slider {
+            -wibkit-appearance: none;
+            width: 50%;
+            height: 25px;
+            background: #d3d3d3;
+            outline: none; 
+            opacity: 0.7;
+            -webkit-transition: .2s; 
+            transition: opacity .2s;
+            
+        }
+        .slider:hover {
+            opacity: 1;
+        }
+        .slider::-webkit-slider-thumb { 
+            webkit-appearance: round; /* Override default look */
+            appearance: none;
+            width: 40px; /* Set a specific slider handle width */
+            height: 25px; /* Slider handle height */
+            background: #00007d; /* Green background */
+            cursor: pointer; /* Cursor on hover */
+            border-radius: 48px;
+            box-shadow: 1px 1px 1px #000000, 0px, 0px, 1px, #0d0d0d;
+        }
+        
+        .slider::-moz-range-thumb {
+            width: 35px; /* Set a specific slider handle width */
+            height: 35px; /* Slider handle height */
+            radius: 25px;
+            background: #00007d; /* Green background */
+            cursor: pointer; /* Cursor on hover */
+        }
